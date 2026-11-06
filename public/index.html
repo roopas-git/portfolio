@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roopa S | Android Developer & Engineer</title>
+    <meta name="description"
+        content="Portfolio of Roopa S, Android Developer with 3+ years of experience building modern, high-performance, and beautiful applications using Kotlin and Jetpack Compose.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Sticky Header -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-bracket">&lt;</span>Roopa<span class="logo-dot">.</span>S<span
+                    class="logo-bracket">&gt;</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="main-navigation" aria-label="Main Navigation">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions (Theme Toggle & Hamburger) -->
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light theme"
+                    title="Toggle theme">
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+                        </path>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+
+                <button class="menu-toggle" id="menu-toggle-btn" aria-expanded="false" aria-controls="main-navigation"
+                    aria-label="Toggle navigation menu">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="about" aria-label="About Me">
+            <div class="hero-bg-gradients" aria-hidden="true">
+                <div class="glow-1"></div>
+                <div class="glow-2"></div>
+            </div>
+
+            <div class="section-container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">Android Engineer</div>
+                    <h1 class="hero-title">
+                        Building premium mobile experiences that <span class="text-gradient">flow flawlessly</span>.
+                    </h1>
+                    <p class="hero-description">
+                        Hi, I'm <strong class="text-highlight">Roopa S</strong>. I specialize in crafting robust,
+                        high-performance, and pixel-perfect Android applications using Kotlin, Jetpack Compose, and
+                        modern clean architecture. Over the last 3+ years, I've helped scale mobile products in
+                        fast-paced startup environments.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring" aria-hidden="true"></div>
+                        <img src="assets/avatar.png" alt="Illustration of Roopa S, Android Developer, coding on laptop"
+                            class="avatar-img" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience" aria-label="Work Experience">
+            <div class="section-container">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">A timeline of my work in mobile product development.</p>
+
+                <div class="timeline">
+                    <!-- Timeline Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <span class="job-duration">Jan 2023 - Present</span>
+                                <h3 class="job-title">Senior Android Developer</h3>
+                                <div class="job-company">Fast-Growing Tech Startup</div>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Led the modernization and maintenance of core Android apps, focused on scaling
+                                    features and improving architecture scalability.</p>
+                                <ul class="job-bullets">
+                                    <li>Directed codebase migration from legacy XML layouts to **Jetpack Compose**,
+                                        improving layout rendering speed by 25% and reducing UI code churn.</li>
+                                    <li>Implemented **asynchronous state management** utilizing Kotlin Coroutines and
+                                        Flows, eliminating persistent race conditions and improving thread safety.</li>
+                                    <li>Re-architected the main application layer based on **Clean Architecture
+                                        (MVVM/MVI)** and Dagger Hilt dependency injection, boosting unit test coverage
+                                        to 80%.</li>
+                                    <li>Optimized local storage operations through **Room DB migrations** and SQLite
+                                        tuning, reducing query bottlenecks in data-heavy views.</li>
+                                    <li>Standardized CI/CD build scripts with GitHub Actions, automating daily internal
+                                        beta distributions and Play Store releases.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <span class="marker-dot"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <span class="job-duration">June 2021 - Dec 2022</span>
+                                <h3 class="job-title">Android Developer</h3>
+                                <div class="job-company">Mobile App Startup</div>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Collaborated in a tight-knit team to ship features, optimize network calls, and
+                                    ensure standard UI compliance.</p>
+                                <ul class="job-bullets">
+                                    <li>Designed and shipped 10+ major app modules in Kotlin, complying with Material
+                                        Design guidelines.</li>
+                                    <li>Refactored networking code using **Retrofit & OkHttp**, introducing caching
+                                        mechanisms that reduced api payload calls by 30%.</li>
+                                    <li>Integrated Android Architecture Components (ViewModel, LiveData, WorkManager)
+                                        for background synchronization tasks.</li>
+                                    <li>Fixed memory leaks and debugged layout hierarchies using Android Profiler and
+                                        Layout Inspector.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills" aria-label="Technical Skills">
+            <div class="section-container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Technologies, frameworks, and tools I use to build robust Android apps.</p>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skills-card">
+                        <h3 class="skills-category-title">
+                            <span class="category-icon" aria-hidden="true">🛠️</span> Core & Languages
+                        </h3>
+                        <ul class="skills-list">
+                            <li>Kotlin</li>
+                            <li>Java</li>
+                            <li>Android SDK</li>
+                            <li>SQL / Room DB</li>
+                            <li>REST APIs (JSON)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skills-card">
+                        <h3 class="skills-category-title">
+                            <span class="category-icon" aria-hidden="true">🎨</span> UI & Layouts
+                        </h3>
+                        <ul class="skills-list">
+                            <li>Jetpack Compose</li>
+                            <li>Material 3 (M3)</li>
+                            <li>XML Layouts</li>
+                            <li>ConstraintLayout</li>
+                            <li>Custom Canvas / Drawings</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skills-card">
+                        <h3 class="skills-category-title">
+                            <span class="category-icon" aria-hidden="true">🏗️</span> Architecture & Data
+                        </h3>
+                        <ul class="skills-list">
+                            <li>MVVM & MVI Patterns</li>
+                            <li>Clean Architecture</li>
+                            <li>Kotlin Coroutines & Flow</li>
+                            <li>Dagger Hilt (DI)</li>
+                            <li>Repository Pattern</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skills-card">
+                        <h3 class="skills-category-title">
+                            <span class="category-icon" aria-hidden="true">⚙️</span> Tools & Testing
+                        </h3>
+                        <ul class="skills-list">
+                            <li>Git / GitHub</li>
+                            <li>GitHub Actions (CI/CD)</li>
+                            <li>JUnit & Mockk</li>
+                            <li>Android Studio Profiler</li>
+                            <li>Firebase Suite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects" aria-label="Personal Projects">
+            <div class="section-container">
+                <h2 class="section-title">Personal Projects</h2>
+                <p class="section-subtitle">A collection of open-source and utility Android apps I've designed and
+                    developed.</p>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card" id="project-taskflow">
+                        <div class="project-header">
+                            <img src="assets/taskflow_icon.png" alt="TaskFlow App Icon - Glowing green checkmark"
+                                class="project-icon" loading="lazy">
+                            <div class="project-meta">
+                                <h3 class="project-title">TaskFlow</h3>
+                                <span class="project-type">Productivity & Habits</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                A sleek, minimalist productivity planner designed for fluid day-to-day scheduling.
+                                Features custom routines, local alarms, and interactive weekly productivity trackers.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Jetpack Compose</span>
+                                <span class="tag">Room DB</span>
+                                <span class="tag">Flow</span>
+                                <span class="tag">Hilt</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-download" id="download-taskflow" aria-label="Download TaskFlow APK">
+                                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M5 3.22a1.86 1.86 0 0 0-.46 1.29v14.98a1.86 1.86 0 0 0 .46 1.29L14.73 12Z M16.03 10.71l-1.92-1.92L5.8 3.51a1.2 1.2 0 0 0-1.12.08L14.72 12Z M14.72 12l8.84 5.2a1.2 1.2 0 0 0 1.12.08l-8.84-5.28Z M16.03 13.29L14.72 12 5.8 20.41a1.2 1.2 0 0 0 1.12.08l9.11-5.2Z">
+                                    </path>
+                                </svg>
+                                <span>Get APK (v1.2.0)</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card" id="project-habitsphere">
+                        <div class="project-header">
+                            <img src="assets/habitsphere_icon.png" alt="HabitSphere App Icon - Cosmic glowing sphere"
+                                class="project-icon" loading="lazy">
+                            <div class="project-meta">
+                                <h3 class="project-title">HabitSphere</h3>
+                                <span class="project-type">Gamification & Health</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                A gamified habit tracker that transforms daily tasks into RPG quests. Build daily
+                                routines, gain experience, level up your virtual sphere, and view data-backed streak
+                                visualizations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Jetpack Compose</span>
+                                <span class="tag">Coroutines</span>
+                                <span class="tag">MVI</span>
+                                <span class="tag">DataStore</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-download" id="download-habitsphere"
+                                aria-label="Download HabitSphere APK">
+                                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M5 3.22a1.86 1.86 0 0 0-.46 1.29v14.98a1.86 1.86 0 0 0 .46 1.29L14.73 12Z M16.03 10.71l-1.92-1.92L5.8 3.51a1.2 1.2 0 0 0-1.12.08L14.72 12Z M14.72 12l8.84 5.2a1.2 1.2 0 0 0 1.12.08l-8.84-5.28Z M16.03 13.29L14.72 12 5.8 20.41a1.2 1.2 0 0 0 1.12.08l9.11-5.2Z">
+                                    </path>
+                                </svg>
+                                <span>Get APK (v2.0.1)</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card" id="project-auraweather">
+                        <div class="project-header">
+                            <img src="assets/auraweather_icon.png" alt="AuraWeather App Icon - Neon sun behind cloud"
+                                class="project-icon" loading="lazy">
+                            <div class="project-meta">
+                                <h3 class="project-title">AuraWeather</h3>
+                                <span class="project-type">Weather & Generative UI</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                A minimalist weather application utilizing dynamic generative gradients based on current
+                                UV indexes, real-time wind speed, and meteorological conditions.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Jetpack Compose</span>
+                                <span class="tag">Retrofit</span>
+                                <span class="tag">Coroutines</span>
+                                <span class="tag">Flow</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn-download" id="download-auraweather"
+                                aria-label="Download AuraWeather APK">
+                                <svg class="play-store-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M5 3.22a1.86 1.86 0 0 0-.46 1.29v14.98a1.86 1.86 0 0 0 .46 1.29L14.73 12Z M16.03 10.71l-1.92-1.92L5.8 3.51a1.2 1.2 0 0 0-1.12.08L14.72 12Z M14.72 12l8.84 5.2a1.2 1.2 0 0 0 1.12.08l-8.84-5.28Z M16.03 13.29L14.72 12 5.8 20.41a1.2 1.2 0 0 0 1.12.08l9.11-5.2Z">
+                                    </path>
+                                </svg>
+                                <span>Get APK (v1.0.5)</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact" aria-label="Contact Information">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss app ideas, contract positions, or team opportunities.</p>
+
+                <div class="contact-grid">
+                    <!-- Contact Details Card -->
+                    <div class="contact-card-info">
+                        <h3 class="contact-card-title">Roopa S</h3>
+                        <p class="contact-card-text">
+                            Looking for a Kotlin engineer who writes clean architecture and Compose layouts? Let's
+                            connect.
+                        </p>
+
+                        <!-- Click to copy email card -->
+                        <button class="email-copy-btn" id="email-btn"
+                            aria-label="Copy roopa.android3@gmail.com email to clipboard" title="Copy to clipboard">
+                            <div class="email-btn-content">
+                                <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="email-address">roopa.android3@gmail.com</span>
+                            </div>
+                            <span class="copy-badge" id="copy-badge-text">Copy</span>
+                        </button>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn Profile"
+                                id="linkedin-link">LinkedIn</a>
+                            <a href="#" class="social-link" aria-label="GitHub Profile" id="github-link">GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Container -->
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" required placeholder="Your Name"
+                                aria-required="true">
+                            <span class="error-msg" id="name-error">Please enter your name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" name="email" required placeholder="name@example.com"
+                                aria-required="true">
+                            <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" required
+                                placeholder="Tell me about your project..." rows="4" aria-required="true"></textarea>
+                            <span class="error-msg" id="message-error">Please enter your message.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Roopa S. All rights reserved. Built with modern, pure vanilla code.</p>
+            <div class="footer-bottom-links">
+                <a href="#about" class="footer-link">Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div class="toast-notification" id="toast" role="alert" aria-live="polite">
+        Email copied to clipboard!
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
