@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "portfolio-4bd54"
+  },
+  "targets": {
+    "portfolio-4bd54": {
+      "hosting": {
+        "sroopa": ["sroopa"]
+      }
+    }
+  }
+}
