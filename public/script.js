@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyBadgeText = document.getElementById('copy-badge-text');
 
     emailBtn.addEventListener('click', async () => {
-        const emailAddress = 'roopa.android3@gmail.com';
+        const emailAddress = 'roopa91213@gmail.com';
         try {
             await navigator.clipboard.writeText(emailAddress);
             

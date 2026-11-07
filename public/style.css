@@ -481,9 +481,13 @@
     /* Project Cards Container & Elements */
     .projects-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 420px));
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 2.5rem;
+    }
+
+    .projects-grid.is-single {
+        grid-template-columns: minmax(0, 420px);
+        justify-content: center;
     }
 
     .project-card {
