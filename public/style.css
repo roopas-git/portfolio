@@ -254,15 +254,17 @@
         text-wrap: pretty;
     }
 
-    /* Mobile specific menus using CSS :has() */
-    body:has(.menu-toggle[aria-expanded="true"]) {
-        overflow: hidden;
-    }
+    /* Mobile specific menus using CSS :has() - only below the hamburger breakpoint */
+    @media (max-width: 768px) {
+        body:has(.menu-toggle[aria-expanded="true"]) {
+            overflow: hidden;
+        }
 
-    body:has(.menu-toggle[aria-expanded="true"]) .main-nav {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+        body:has(.menu-toggle[aria-expanded="true"]) .main-nav {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
     }
 
     /* Footer styling */
@@ -326,16 +328,6 @@
         .nav-link {
             font-size: 1.5rem;
             font-weight: 600;
-        }
-
-        .menu-toggle {
-            display: flex;
-        }
-    }
-
-    @media (min-width: 769px) {
-        .menu-toggle {
-            display: none;
         }
     }
 }
@@ -404,7 +396,8 @@
         cursor: pointer;
         width: 44px;
         height: 44px;
-        display: flex;
+        /* Hidden on desktop; shown only at the mobile breakpoint below */
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -412,6 +405,12 @@
         padding: 5px;
         border-radius: 8px;
         border: 1px solid var(--border-color);
+    }
+
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: flex;
+        }
     }
 
     .menu-toggle:hover {
