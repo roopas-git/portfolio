@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "sroopa",
+    "target": "roopas",
     "public": "public",
     "ignore": [
       "firebase.json",
